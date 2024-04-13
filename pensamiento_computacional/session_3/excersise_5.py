@@ -54,3 +54,5 @@ def playRockPapperOrScissor():
     play = restart()
   else:
     print("Bye!")
+    
+playRockPapperOrScissor()
