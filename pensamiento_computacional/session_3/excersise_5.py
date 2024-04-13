@@ -33,3 +33,24 @@ def restart():
       continue
 
   return restart
+
+# maneja la logica de inicio, evaluacion de opciones, reinicio y finalizacion del juego
+def playRockPapperOrScissor():
+  play = True
+
+  while play:
+    user_choice = getUserChoce()
+
+    if user_choice == 0:
+      showFeedback(user_choice, 1)
+    elif user_choice == 1:
+      showFeedback(user_choice, 2)
+    elif user_choice == 2:
+      showFeedback(user_choice, 0)
+    else:
+      print("Please enter a valid option")
+      continue
+
+    play = restart()
+  else:
+    print("Bye!")
