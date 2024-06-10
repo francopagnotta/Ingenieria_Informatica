@@ -107,9 +107,9 @@ def sortMarathoners():
 
 	for marathoner in marathoners:
      	# marathoner["marathons"].sort(key=lambda marathon: convertTimeToSeconds(marathon["time"])) #not recomended because marathoner["marathons"] is type any
-		marathoner["marathons"] = sorted(marathoner["marathons"],key = lambda marathon : convertTimeToSeconds(marathon["time"]))
+		marathoner["marathons"] = sorted(marathoner["marathons"],key = lambda marathon : convertTimeToSeconds(marathon["time"])) #the sorted method return a new list
   
-		# marathons: list = marathoner["marathons"] #alternative 2 with types to avoid any 
+		# marathons: list = marathoner["marathons"] #alternative 2 with types to avoid "any" 
 		# marathons.sort(key = lambda marathon : convertTimeToSeconds(marathon["time"]))
   
 	for marathoner in marathoners:
